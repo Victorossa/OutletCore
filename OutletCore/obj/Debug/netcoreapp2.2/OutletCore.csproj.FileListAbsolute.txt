@@ -5,7 +5,6 @@ C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\bin\Debug\netcoreapp2.2\Out
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\bin\Debug\netcoreapp2.2\OutletCore.runtimeconfig.json
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\bin\Debug\netcoreapp2.2\OutletCore.runtimeconfig.dev.json
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\bin\Debug\netcoreapp2.2\OutletCore.dll
-C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.csprojAssemblyReference.cache
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.RazorAssemblyInfo.cache
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.RazorAssemblyInfo.cs
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.AssemblyInfoInputs.cache
@@ -14,3 +13,4 @@ C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\Out
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\bin\Debug\netcoreapp2.2\OutletCore.pdb
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.dll
 C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.pdb
+C:\Flutter\ProyAngular\NewR\SolucionOulet\OutletCore\obj\Debug\netcoreapp2.2\OutletCore.csprojAssemblyReference.cache

@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Flutter\\ProyAngular\\NewR\\SolucionOulet\\OutletCore\\OutletCore.csproj": {}
+    "D:\\OuletNew\\OutletCore\\OutletCore\\OutletCore.csproj": {}
   },
   "projects": {
-    "C:\\Flutter\\ProyAngular\\NewR\\SolucionOulet\\OutletCore\\OutletCore.csproj": {
+    "D:\\OuletNew\\OutletCore\\OutletCore\\OutletCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Flutter\\ProyAngular\\NewR\\SolucionOulet\\OutletCore\\OutletCore.csproj",
+        "projectUniqueName": "D:\\OuletNew\\OutletCore\\OutletCore\\OutletCore.csproj",
         "projectName": "OutletCore",
-        "projectPath": "C:\\Flutter\\ProyAngular\\NewR\\SolucionOulet\\OutletCore\\OutletCore.csproj",
-        "packagesPath": "C:\\Users\\programador1\\.nuget\\packages\\",
-        "outputPath": "C:\\Flutter\\ProyAngular\\NewR\\SolucionOulet\\OutletCore\\obj\\",
+        "projectPath": "D:\\OuletNew\\OutletCore\\OutletCore\\OutletCore.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "D:\\OuletNew\\OutletCore\\OutletCore\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\programador1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -15,7 +15,6 @@ namespace OutletCore.Models
         {
         }
 
-        public virtual DbSet<ProdCategoriaProducto> ProdCategoriaProducto { get; set; }
         public virtual DbSet<ProdPrecRegistroPrecio> ProdPrecRegistroPrecio { get; set; }
         public virtual DbSet<ProdPrecTipoPrecio> ProdPrecTipoPrecio { get; set; }
         public virtual DbSet<ProdProducto> ProdProducto { get; set; }
@@ -24,30 +23,14 @@ namespace OutletCore.Models
         public virtual DbSet<ProdUdmUnidadDeMedida> ProdUdmUnidadDeMedida { get; set; }
 
         
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.6-servicing-10079");
 
-            modelBuilder.Entity<ProdCategoriaProducto>(entity =>
-            {
-                entity.HasKey(e => e.CategoriaId);
-
-                entity.ToTable("prod-categoria-producto");
-
-                entity.Property(e => e.CategoriaId).HasColumnName("CategoriaID");
-
-                entity.Property(e => e.NombreCategoria)
-                    .IsRequired()
-                    .HasMaxLength(100)
-                    .IsUnicode(false);
-            });
-
             modelBuilder.Entity<ProdPrecRegistroPrecio>(entity =>
             {
-                entity.HasKey(e => e.RegistroPrecio);
-
-                entity.ToTable("prod-prec-registro-precio");
+                entity.HasKey(e => e.RegistroPrecio)
+                    .HasName("PK_prod-prec-registro-precio");
 
                 entity.Property(e => e.Precio).HasColumnType("decimal(18, 2)");
 
@@ -58,9 +41,8 @@ namespace OutletCore.Models
 
             modelBuilder.Entity<ProdPrecTipoPrecio>(entity =>
             {
-                entity.HasKey(e => e.TipoPrecioId);
-
-                entity.ToTable("prod-prec-tipo-precio");
+                entity.HasKey(e => e.TipoPrecioId)
+                    .HasName("PK_prod-prec-tipo-precio");
 
                 entity.Property(e => e.TipoPrecioId).HasColumnName("TipoPrecioID");
 
@@ -74,8 +56,6 @@ namespace OutletCore.Models
             {
                 entity.HasKey(e => e.ProductoId)
                     .HasName("PK_prod_producto");
-
-                entity.ToTable("prod-producto");
 
                 entity.Property(e => e.ProductoId).HasColumnName("ProductoID");
 
@@ -108,8 +88,6 @@ namespace OutletCore.Models
                 entity.HasKey(e => e.TipoProductoId)
                     .HasName("PK_prod_tipoproducto");
 
-                entity.ToTable("prod-tipo-producto");
-
                 entity.Property(e => e.TipoProductoId).HasColumnName("TipoProductoID");
 
                 entity.Property(e => e.NombreTipoProducto)
@@ -123,8 +101,6 @@ namespace OutletCore.Models
                 entity.HasKey(e => e.CategoriaUnidadDeMedidaId)
                     .HasName("PK_prod_udm_categoriaunidaddemedida");
 
-                entity.ToTable("prod-udm-categoria-unidad-de-medida");
-
                 entity.Property(e => e.CategoriaUnidadDeMedidaId).HasColumnName("CategoriaUnidadDeMedidaID");
             });
 
@@ -132,8 +108,6 @@ namespace OutletCore.Models
             {
                 entity.HasKey(e => e.UnidadDeMedidaId)
                     .HasName("PK_prod_unidaddemedida");
-
-                entity.ToTable("prod-udm-unidad-de-medida");
 
                 entity.Property(e => e.UnidadDeMedidaId).HasColumnName("UnidadDeMedidaID");
 
